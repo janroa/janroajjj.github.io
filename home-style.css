@@ -1,0 +1,95 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url(../IMG/Bg6.gif);
+    background-repeat: no-repeat;
+    background-size:100vw 100vh;
+}
+
+span {
+    color: red;
+}
+
+.main-h1 {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    margin: 100px 300px;
+    font-weight: 900;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 100px;
+    padding: 20px 0;
+}
+
+h2 {
+    color: white;
+    padding: 30px 100px;
+}
+
+.whole-member-list-container {
+    text-align: center;
+    padding: 20px;
+    margin: 100px 0;
+}
+
+.members-container1, .members-container2 {
+    display: flex;
+}
+
+.member {
+    margin: 20px 20px;
+    width: 500px;
+    height: 200px;
+    background-color: black;
+    color: white;
+    text-align: left;
+    transition: 0.3s all 0s linear;
+}
+
+.member img {
+    width: 100px;
+    height: 100px;
+    float: right;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.member h3 {
+    padding: 20px;
+    margin: 30px 10px;
+    
+}
+
+.member a {
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    margin: 0 30px;
+    border: 2px solid white;
+    border-radius: 50px;
+    background: -webkit-linear-gradient(0deg, transparent 50%, white 50%);
+    background-size: 400px 80px;
+    transition: 0.4s all 0s ease-in-out;
+}
+
+.member a:hover {
+    background-position: 200px 0;
+    color: black;
+}
+
+.member:hover {
+    transform: scale(1.2);
+    background-color: #222;
+}
+
+

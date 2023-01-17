@@ -1,0 +1,98 @@
+body{
+    background-color: black;
+    background-image: url(../IMG/9491f15b5c30eded17a617709be3419a\ \(1\).gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+    list-style: none;
+}
+nav ul li a {
+    position: relative;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    color: black;
+    padding: 3px 6px;
+    font-weight: bold;
+}
+nav ul li a::after{
+    position: absolute;
+    content: '';
+    background-color: #F53D19;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.imgs{
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    position: relative;
+
+}
+.bodysec{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 8%;
+    margin-left: 200px;
+    font-size: 30px;
+    color:black;
+}
+.bodysec h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+}
+.aboutt{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    background: none ; 
+    border: 2px solid black;
+    padding: 12px 20px;  
+    min-width: 200px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    font-weight: bold;
+
+}
+.aboutt:hover{
+    color: white;
+
+}
+.aboutt::before{
+    content: '' ;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+  
+}
+.aboutt::before{
+    transform: scaleX(0);
+
+}
+.aboutt:hover::before{
+    transform: scaleX(1);
+}
+
+
+
+
+
+
+
